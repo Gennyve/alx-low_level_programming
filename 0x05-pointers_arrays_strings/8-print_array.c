@@ -1,11 +1,22 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
-* reset_to_98 - updates the value of the variable
-* the pointer points to to 98
-*@n: pointer to the variable to update
-*/
-void reset_to_98(int *n)
+ * print_array - prints n elements of an array of integers
+ * followed by a new line
+ * @a: array to be printed
+ * @n: number of elements to print
+ */
+void print_array(int *a, int n)
 {
-*n = 98;
-{
+	int i;
+
+	for (i = 0; i < n; i++)
+	{
+		if (i == 0)
+			printf("%d", a[i]);
+		else
+			printf(", %d", a[i]);
+	}
+		printf("\n");
+}
